@@ -61,12 +61,23 @@ export default function Form(props) {
                 Term of Service:
                 <input
                 type='checkbox'
-                name=''
-                checked={values.}
+                name='yes'
+                checked={values.yes}
+                onChange={onChange}
+                 />
+            </label>
+
+            <label>
+               Term of Service:
+                 <input
+                 type='checkbox'
+                 name='no'
+                 checked={values.no}
+                 onChange={onChange}
                  />
             </label>
 
             </div>
         </form>
-    )
+    );
 }
